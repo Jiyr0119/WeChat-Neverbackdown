@@ -1,0 +1,26 @@
+.map-con{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 42px;
+}
+.bottom-area{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 42px;
+  text-align: center;
+  color: #fff;
+}
+.publish{
+  flex: 1;
+  background: #ff9600;
+}
+.search{
+  flex: 1;
+  background: #27c58a;
+
+}

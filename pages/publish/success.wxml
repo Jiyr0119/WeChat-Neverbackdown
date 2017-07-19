@@ -1,0 +1,11 @@
+<template name="success">
+	<view class="wrapper">
+		<view class="succ-title"><icon class="succ-icon" type="success" size="40" color="#27c58a"/>恭喜您,发布成功！</view>
+		<view class="succ-item">1. 审核通过后信息将被展示在地图上。</view>
+		<view class="succ-item">2. 信息有效期为30天,30天后自动清除。</view>
+		<view class="succ-item">3. 发布的信息本,平台不会用于商业用途。</view>
+		<view class="succ-item">4. 线下见面发生任何情况与本平台无关!</view>		
+		<view class="succ-item">5. 祝你早日变成想要的自己!</view>						
+			<navigator url="/pages/index/index" class="btn">返回首页</navigator>
+	</view>
+</template>

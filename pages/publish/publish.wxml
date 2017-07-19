@@ -1,0 +1,37 @@
+<block wx:if="{{!success}}">
+	<view class="area">
+		<text class="area-title">你的地址</text>
+		<view class="area-info" bindtap="handleAddressTap">{{address}}</view>
+	</view>
+
+	<view class="area">
+		<text class="area-title">运动方式</text>
+		<view class="area-info">
+			<radio-group class="radio-group" bindchange="handleTypeChange">
+	  			<label class="radio">
+	    			<radio value="sell" />跑步（户外）
+	  			</label>
+	  			<label class="radio">
+	    			<radio value="buy" />健身
+	  			</label>
+			</radio-group>
+		</view>
+	</view>
+
+	<view class="area">
+		<text class="area-title">简介</text>
+		<input class="area-info" placeholder="填写您对小伙伴的期望" placeholder-class="placeholder" bindinput="handleMessageInput"/>
+	</view>
+
+	<view class="area">
+		<text class="area-title">联系方式</text>
+		<input class="area-info" placeholder="填写您的联系方式" placeholder-class="placeholder" bindinput="handleContactInput"/>
+	</view>
+
+	<view class="btn" bindtap="handlePostTap">发布信息</view>
+</block>
+
+<block wx:if="{{success}}">
+	<import src="success.wxml"/>
+	<template is="success"/>
+</block>

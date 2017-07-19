@@ -1,0 +1,16 @@
+<view class="search-box">
+	<input placeholder="请输入搜索关键字" placeholder-class="placeholder" class="search-input" bindinput="handleSearchChange"/>
+	<view class="search-button" bindtap="handleSearchTap">搜索</view>
+</view>
+
+<view class="search-list" wx:if="{{hasResult}}">
+	<view class="search-item" bindtap="handleItemTap" wx:for="{{resultList}}" wx:key="{{index}}_searchlist" id="{{item.id}}">
+		<view class="search-item-area">简介：{{item.message}}</view>
+		<view>地址：{{item.address}}</view>
+		<view>联系方式: {{item.contact}}</view>
+	</view>
+</view>
+
+<view class="search-list" wx:if="{{!hasResult}}" >
+	<view class="search-item">sorry，暂无相关信息</view>
+</view>
