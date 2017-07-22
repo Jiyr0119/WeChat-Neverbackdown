@@ -9,7 +9,8 @@ Page({
         latitude: "",
         type: "",
         message: "",
-        contact: ""
+        contact: "",
+        isGoing:false
     },
 
     onLoad: function () {
@@ -17,9 +18,14 @@ Page({
     },
 
     handleAddressTap: function() {
+      if (!this.staticData.isGoing) {
+        this.staticData.isGoing =true; 
         wx.chooseLocation({
-          success: this.handleAddressSuccess.bind(this)
+          success: this.handleAddressSuccess.bind(this),
+          complete:this.handleMapFlag.bind(this)
         })
+      }
+       
     },
 
     handleAddressSuccess: function(res) {
@@ -31,7 +37,9 @@ Page({
           latitude: res.latitude
         })
     },
-
+    handleMapFlag: function() {
+         this.staticData.isGoing =false; 
+    },
     handleTypeChange: function(e) {
         this.staticData.type = e.detail.value;
     },
