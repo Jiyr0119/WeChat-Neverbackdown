@@ -5,14 +5,15 @@ Page({
 		message: "",
 		contact: "",
 		type:"sell",
-		textType: ""
+		textType: "",
+		distinct: "jiyr0119"
 	},
 
 	onLoad: function(options) {
 		var id = options.id;
 		 wx.request({
                   url: 'https://nuanwan.wekeji.cn/student/index.php/trade/get_item',
-                  data: {id: id},
+                  data: {id: id, distinct: "jiyr0119"},
                   method:"POST",
                   header: {
                       'content-type': 'application/x-www-form-urlencoded'
