@@ -10,6 +10,7 @@ Page({
 	},
 
 	onLoad: function(options) {
+		console.log(options);
 		var id = options.id;
 		 wx.request({
                   url: 'https://nuanwan.wekeji.cn/student/index.php/trade/get_item',

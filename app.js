@@ -6,6 +6,7 @@ App({
   onLaunch: function() {
     try {
       var localInfo = wx.getStorageSync("deviceInfo");
+      console.log(localInfo)
       if (!localInfo) {
         var res = wx.getSystemInfoSync();
         wx.setStorageSync("deviceInfo", res);
