@@ -1,12 +1,34 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/publish/publish",
-    "pages/detail/detail",
-    "pages/search/search"
-  ],
-  "window":{
-    "navigationBarBackgroundColor": "#27c58a",
-    "navigationBarTextStyle":"#fff"
-  }
+    "pages": [
+        "pages/index/index",
+        "pages/publish/publish",
+        "pages/detail/detail",
+        "pages/search/search",
+        "pages/user/user",
+        "pages/share/share"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#27c58a",
+        "navigationBarTextStyle": "#fff"
+    },
+    "tabBar": {
+        "color": "#373737",
+        "selectedColor": "#27c58a",
+        "borderStyle": "#f0f0f0",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "resources/index0.png",
+                "selectedIconPath": "resources/index.png",
+                "text": "跑友圈"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "iconPath": "resources/user0.png",
+                "selectedIconPath": "resources/user.png",
+                "text": "休息室"
+            }
+        ]
+    }
 }

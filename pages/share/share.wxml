@@ -1,0 +1,22 @@
+<!--pages/share/share.wxml-->
+<view>
+	<view class="share-box">
+		<image class="run"  src="../../resources/run.jpg"></image>
+	</view>
+	<image class="choose"  src="../../resources/requset.png"  bindtap="handleUpDate"></image>
+	<block wx:for="{{src}}" wx:key="{{index}}">
+		<view class="set-five">
+			<view class="five-img">
+	            <image src="{{item[0]}}" class="set-img"/>
+	        </view>
+	        <view class="five-img">
+	            <view class="five-right">
+	                <image src="{{item[1]}}" class="set-img" />
+	            </view>
+	            <view class="five-right">
+	                <image src="{{item[2]}}" class="set-img" />
+	            </view>     
+	        </view>
+		</view>
+	</block>
+</view>

@@ -1,0 +1,31 @@
+/* pages/user/user.wxss */
+.userbg {
+	width: 100%;
+	text-align: center;
+}
+.userinfo-avatar{
+	width: 200rpx;
+	height: 200rpx;
+	display: block;
+	border-radius: 50%;
+	margin: 50rpx auto;
+	box-shadow: 0 0 5rpx 5rpx #888888;
+}
+.user-tit{
+	margin: 50rpx 0;
+	width: 100%;
+	height: 100rpx;
+	text-align: center;
+	line-height: 100rpx;
+	border:1rpx solid #ececec;
+}
+.run {
+	width: 150rpx;
+	height: 150rpx;
+	margin: 20rpx;
+}
+.user-content{
+	width: 100%;
+	padding-top:100rpx; 
+	display: flex;
+}

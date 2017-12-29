@@ -1,0 +1,20 @@
+<!--pages/user/user.wxml-->
+<view>
+	<view class="userbg box-img">
+			<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    		<view class="userinfo-nickname">{{userInfo.nickName}}</view>
+    </view>
+    <view class="user-tit">
+    	来这里记录一下自己的运动吧～
+    </view>
+    <view class="user-content">
+	    <view class="userinfo-avatar">
+	    	<navigator url="/pages/share/share?way=run">
+				<image class="run" src="../../resources/index.png" background-size="cover"></image>
+            </navigator>
+	    </view>
+	    <view class="userinfo-avatar">
+			<image class="run" src="../../resources/power.png" background-size="cover"></image>
+	    </view>
+    </view>
+</view>
