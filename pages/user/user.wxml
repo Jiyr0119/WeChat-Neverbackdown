@@ -1,5 +1,5 @@
 <!--pages/user/user.wxml-->
-<view>
+<view style="background: #fff;padding-top:20rpx;">
 	<view class="userbg box-img">
 			<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     		<view class="userinfo-nickname">{{userInfo.nickName}}</view>
@@ -9,12 +9,14 @@
     </view>
     <view class="user-content">
 	    <view class="userinfo-avatar">
-	    	<navigator url="/pages/share/share?way=run">
+	    	<navigator url="/pages/share/share?way=1">
 				<image class="run" src="../../resources/index.png" background-size="cover"></image>
             </navigator>
 	    </view>
 	    <view class="userinfo-avatar">
-			<image class="run" src="../../resources/power.png" background-size="cover"></image>
+	    	<navigator url="/pages/share/share?way=2">
+				<image class="run" src="../../resources/power.png" background-size="cover"></image>
+            </navigator>
 	    </view>
     </view>
 </view>

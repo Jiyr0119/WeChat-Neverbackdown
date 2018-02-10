@@ -19,7 +19,7 @@ Page({
           iconPath: '/resources/go.png',
           position: {
             left:20,
-            top: deviceInfo.windowHeight-100,
+            top: deviceInfo.windowHeight-150,
             width: 30,
             height: 30
           },

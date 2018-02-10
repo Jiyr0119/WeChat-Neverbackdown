@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    scr:[]
   
   },
 
@@ -12,18 +13,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-        console.log(options)
+    wx.hideShareMenu();
+    this.setData({
+      way:options.way
+    })
+    let list = wx.getStorageSync(this.data.way)
+    this.setData({
+      src:list
+    })
   },
-
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow() {
-  
-  },
-  onShareAppMessage() {
-  
-  },
+  onShow() {},
+  onShareAppMessage() {},
   handleUpDate() {
     wx.showModal({
             content: '最多上传三张图片哟~',
@@ -36,10 +39,10 @@ Page({
                   success: res => {
                     // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
                     var tempFilePaths = res.tempFilePaths;
-                    console.log(tempFilePaths)
                     this.setData({
                         src: tempFilePaths
                     })
+                    wx.setStorageSync(this.data.way,tempFilePaths)
                   }
                 })
             }

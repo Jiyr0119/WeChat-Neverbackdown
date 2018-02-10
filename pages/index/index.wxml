@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="map-con">
-<map id="map" longitude="{{longitude}}" show-location latitude="{{latitude}}" controls="{{controls}}"scale="16" markers="{{markers}}" bindmarkertap="bindMarkerTap" bindcontroltap="handleControlTap" style="width: 100%; height: 100%;"></map>
+<map id="map" longitude="{{longitude}}" show-location latitude="{{latitude}}" controls="{{controls}}" scale="16" markers="{{markers}}" bindmarkertap="bindMarkerTap" bindcontroltap="handleControlTap" style="width: 100%; height: 100%;"></map>
 </view>
 <view class="bottom-area">
   	<navigator url="/pages/publish/publish" class="publish">动起来</navigator>

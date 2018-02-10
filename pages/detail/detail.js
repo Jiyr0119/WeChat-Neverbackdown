@@ -9,8 +9,7 @@ Page({
 		distinct: "jiyr0119"
 	},
 
-	onLoad: function(options) {
-		console.log(options);
+	onLoad(options) {
 		var id = options.id;
 		 wx.request({
                   url: 'https://nuanwan.wekeji.cn/student/index.php/trade/get_item',
@@ -23,7 +22,7 @@ Page({
             })
 	},
 
-	handleGetDetailSuccess: function(res) {
+	handleGetDetailSuccess(res) {
 		var data = res.data.data;
 		this.setData({
 			address: data.address,
